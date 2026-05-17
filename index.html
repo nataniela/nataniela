@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Nataniela Simão</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="hero">
+    <h1>👋 Olá, eu sou Nataniela Simão</h1>
+    <p>Programadora em desenvolvimento | Estudante de Software</p>
+  </header>
+    <div class="profile-container">
+  <label for="upload">
+    <img src="foto.jpg" class="profile-pic" id="preview">
+  </label>
+
+  <input type="file" id="upload" accept="image/*">
+</div>
+  <section class="about">
+    <h2>SOBRE MIM</h2>
+    <p>
+      Sou uma desenvolvedora em formação com base em programação web.
+      Estou a aprender e evoluir em desenvolvimento de sistemas,
+      com foco em criar aplicações modernas e funcionais.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>TECNOLOGIAS</h2>
+    <div class="grid">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>PHP</div>
+      <div>MySQL</div>
+      <div>Git</div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>PROJECTOS</h2>
+
+    <div class="card">
+      <h3>Tela de login</h3>
+      <p>Projeto com PHP e MySQL para autenticação de utilizadores.</p>
+    </div>
+
+    <div class="card">
+      <h3>📚 Sistema Web de Gestão para Trabalho de conclusão de curso(escolar)</h3>
+      <p> O Sistema Web de Gestão Escolar é uma aplicação desenvolvida como projeto de TCC, com o objetivo de facilitar a administração de informações escolares de forma digital, organizada e eficiente.
+
+O sistema permite a gestão de alunos, professores, turmas e notas, substituindo processos manuais e reduzindo o uso de ferramentas informais como papel ou mensagens dispersas.
+
+Este projeto foi desenvolvido com foco em melhorar a comunicação e organização dentro do ambiente escolar, garantindo maior rapidez no acesso às informações e melhor controlo dos dados académicos.
+
+Objetivo do sistema
+Criar uma plataforma centralizada e automatizar o processo de gestão escolar,
+permitindo acompanhamento contínuo, submissão de trabalhos e avaliação organizada entre estudantes,orientadores e coordenadores.
+
+ Funcionalidades principais
+- Submissão de TCC pelos estudantes
+- Acompanhamento do progresso do projeto
+- Avaliação e feedback dos orientadores
+- Organização de fases do TCC
+- Gestão de utilizadores (estudantes,orientadores e coordenadores)
+
+ Benefícios
+- Centralização das informações do TCC
+- Melhor comunicação entre estudante e orientador
+- Redução de processos manuais
+- Maior organização e transparência
+- Facilidade no acompanhamento do progresso
+
+ Tecnologias utilizadas
+- HTML
+- CSS
+- PHP
+- MySQL
+- JavaScript
+
+ Estado do projeto
+Em desenvolvimento contínuo como parte do trabalho de conclusão de curso (TCC).</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>📫 Contacto: simaorochane@gmail.com</p>
+   <p><strong>Nome:</strong> Nataniela Simão</p>
+
+  <p><strong>GitHub:</strong> 
+    <a href="https://github.com/simaorochane-ship-it.git" target="_blank">
+      @simaorochane-ship-it
+    </a>
+  </p>
+</section>
+  </footer>
+ <script>
+document.getElementById('upload').addEventListener('change', function(event) {
+  const file = event.target.files[0];
+  const reader = new FileReader();
+
+  reader.onload = function(e) {
+    document.getElementById('preview').src = e.target.result;
+  }
+
+  reader.readAsDataURL(file);
+});
+</script>
+</body>
+</html>
