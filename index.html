@@ -3,113 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Nataniela Simão</title>
+
+  <title>Portfólio | Nataniela Simão</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 
 <body>
 
-  <header class="hero">
-    <h1>👋 Olá, eu sou Nataniela Simão</h1>
-    <p>Programadora em desenvolvimento | Estudante de Software</p>
-  </header>
-    <div class="profile-container">
-  <label for="upload">
-    <img src="foto.jpg" class="profile-pic" id="preview">
-  </label>
+  <!-- HERO -->
+  <section class="hero">
 
-  <input type="file" id="upload" accept="image/*">
-</div>
+    <div class="hero-text">
+      <h1>Olá, eu sou <span>Nataniela Simão</span></h1>
+
+      <p>
+        Desenvolvedora Web em formação apaixonada por tecnologia,
+        sistemas web e desenvolvimento de software moderno.
+      </p>
+
+      <a href="https://github.com/nataniela" target="_blank" class="btn">
+        Ver GitHub
+      </a>
+    </div>
+
+    <div class="hero-image">
+
+      <label for="upload">
+        <img src="foto.jpg" alt="Foto de perfil" id="preview">
+      </label>
+
+      <input type="file" id="upload" hidden accept="image/*">
+
+    </div>
+
+  </section>
+
+  <!-- SOBRE -->
   <section class="about">
-    <h2>SOBRE MIM</h2>
+
+    <h2>Sobre Mim</h2>
+
     <p>
-      Sou uma desenvolvedora em formação com base em programação web.
-      Estou a aprender e evoluir em desenvolvimento de sistemas,
-      com foco em criar aplicações modernas e funcionais.
+      Sou estudante de desenvolvimento de software e estou a evoluir
+      constantemente nas tecnologias web.
+
+      Tenho interesse em criar sistemas modernos, funcionais e bem organizados,
+      focados em resolver problemas reais.
     </p>
+
   </section>
 
+  <!-- TECNOLOGIAS -->
   <section class="skills">
-    <h2>TECNOLOGIAS</h2>
-    <div class="grid">
-      <div>HTML</div>
-      <div>CSS</div>
-      <div>JavaScript</div>
-      <div>PHP</div>
-      <div>MySQL</div>
-      <div>Git</div>
+
+    <h2>Tecnologias</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">PHP</div>
+      <div class="skill-card">MySQL</div>
+      <div class="skill-card">Git & GitHub</div>
+
     </div>
+
   </section>
 
+  <!-- PROJECTOS -->
   <section class="projects">
-    <h2>PROJECTOS</h2>
 
-    <div class="card">
-      <h3>Tela de login</h3>
-      <p>Projeto com PHP e MySQL para autenticação de utilizadores.</p>
-    </div>
+    <h2>Projetos</h2>
 
-    <div class="card">
-      <h3>📚 Sistema Web de Gestão para Trabalho de conclusão de curso(escolar)</h3>
-      <p> O Sistema Web de Gestão Escolar é uma aplicação desenvolvida como projeto de TCC, com o objetivo de facilitar a administração de informações escolares de forma digital, organizada e eficiente.
+    <div class="project-grid">
 
-O sistema permite a gestão de alunos, professores, turmas e notas, substituindo processos manuais e reduzindo o uso de ferramentas informais como papel ou mensagens dispersas.
+      <div class="project-card">
+        <h3>Sistema de Login</h3>
 
-Este projeto foi desenvolvido com foco em melhorar a comunicação e organização dentro do ambiente escolar, garantindo maior rapidez no acesso às informações e melhor controlo dos dados académicos.
+        <p>
+          Sistema de autenticação desenvolvido com PHP e MySQL
+          utilizando sessões e validação de utilizadores.
+        </p>
+      </div>
 
-Objetivo do sistema
-Criar uma plataforma centralizada e automatizar o processo de gestão escolar,
-permitindo acompanhamento contínuo, submissão de trabalhos e avaliação organizada entre estudantes,orientadores e coordenadores.
+      <div class="project-card">
 
- Funcionalidades principais
-- Submissão de TCC pelos estudantes
-- Acompanhamento do progresso do projeto
-- Avaliação e feedback dos orientadores
-- Organização de fases do TCC
-- Gestão de utilizadores (estudantes,orientadores e coordenadores)
+        <h3>Sistema Web de Gestão Escolar</h3>
 
- Benefícios
-- Centralização das informações do TCC
-- Melhor comunicação entre estudante e orientador
-- Redução de processos manuais
-- Maior organização e transparência
-- Facilidade no acompanhamento do progresso
+        <p>
+          Plataforma desenvolvida para gestão de TCC escolar,
+          permitindo submissão de trabalhos, acompanhamento,
+          avaliação e organização académica.
+        </p>
 
- Tecnologias utilizadas
-- HTML
-- CSS
-- PHP
-- MySQL
-- JavaScript
+        <ul>
+          <li>Submissão de TCC</li>
+          <li>Feedback dos orientadores</li>
+          <li>Gestão de utilizadores</li>
+          <li>Organização de fases</li>
+        </ul>
 
- Estado do projeto
-Em desenvolvimento contínuo como parte do trabalho de conclusão de curso (TCC).</p>
+      </div>
+
     </div>
 
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>📫 Contacto: simaorochane@gmail.com</p>
-   <p><strong>Nome:</strong> Nataniela Simão</p>
 
-  <p><strong>GitHub:</strong> 
-    <a href="https://github.com/simaorochane-ship-it.git" target="_blank">
-      @simaorochane-ship-it
-    </a>
-  </p>
-</section>
+    <h3>Contacto</h3>
+
+    <p>Email: simaorochane@gmail.com</p>
+
+    <p>
+      GitHub:
+      <a href="https://github.com/nataniela" target="_blank">
+        @nataniela
+      </a>
+    </p>
+
   </footer>
- <script>
-document.getElementById('upload').addEventListener('change', function(event) {
-  const file = event.target.files[0];
-  const reader = new FileReader();
 
-  reader.onload = function(e) {
-    document.getElementById('preview').src = e.target.result;
-  }
+  <script>
 
-  reader.readAsDataURL(file);
-});
-</script>
+    const upload = document.getElementById('upload');
+    const preview = document.getElementById('preview');
+
+    upload.addEventListener('change', function () {
+
+      const file = this.files[0];
+
+      if(file){
+
+        const reader = new FileReader();
+
+        reader.onload = function(e){
+
+          preview.src = e.target.result;
+
+          preview.style.transform = "scale(1.05)";
+
+          setTimeout(() => {
+            preview.style.transform = "scale(1)";
+          }, 300);
+
+        }
+
+        reader.readAsDataURL(file);
+
+      }
+
+    });
+
+  </script>
+
 </body>
 </html>
